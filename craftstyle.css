@@ -1,0 +1,115 @@
+body{
+    background-color: antiquewhite;
+    padding-top: 80px; /* space for fixed navbar */
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    color: white;
+    background-color: skyblue;
+    width: 100%;
+    font-size: large;
+    padding: 20px;
+    word-spacing: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.hero-1{
+    text-align: center;
+    margin-top: 0px;
+}
+.hero-title{
+    color: #333;
+    font-family: 'times new roman', Times, serif;
+    font-size: 3em;
+    display: inline-block;
+  text-decoration-line: underline;
+  text-decoration-color: black;      /* underline color */
+  text-decoration-thickness: 3px;  /* thickness of underline */
+  text-decoration-style: wavy;     /* underline style */
+}
+.hero-text{
+    text-align: center;
+    margin-top: 0px;
+    font-size: 1.2em;
+}
+.c-1{
+    background-color: lightyellow;  
+  border: 16px solid white;
+  width: 80%;                /* box width */
+  margin: 50px auto;           /* centers the box horizontally */
+  padding: 20px;               /* space inside the box */
+  text-align: center;          /* centers text inside */
+  border-radius: 10px;         /* rounded corners */
+}
+
+
+    img{
+  width: 250px;              /* best size for gallery thumbnails */
+  max-width: 100%;
+  text-align: center;
+  caption-side: bottom;
+    }
+
+@media (max-width: 600px) {
+  .c-1 {
+    width: 100%;
+    margin: 20px auto; 
+    padding: 20px;
+  }
+  .c-1 img {
+    width: 80vw;
+    max-width: 80vw;
+  }
+}
+.profile-box {
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 2px solid #333;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: 150px 20px auto; /* label | colon | value */
+  row-gap: 12px;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.label {
+  font-weight: bold;
+  text-align: left;
+}
+
+.colon {
+  text-align: center;
+}
+
+.value {
+  text-align: left;
+  color: #444;
+}
+
+@media (max-width: 600px) {
+  .profile-box {
+    width: 90vw;
+    max-width: 90vw;
+    margin: 20px auto;
+    padding: 18px;
+  }
+
+  .profile-grid {
+    grid-template-columns: 1fr 10px 1fr;
+  }
+
+  .value {
+    text-align: left;
+  }
+}
