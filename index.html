@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Craft website" />
@@ -8,70 +8,135 @@
   <meta name="author" content="Your Name" />
   <title>Craft Website</title>
   <link rel="stylesheet" href="craftstyle.css" />
+  <style>
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{position:static;left:0;width:auto;height:auto;background:#fff;padding:8px;z-index:1000}
+    .visually-hidden{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
+    .nav-list{list-style:none;margin:0;padding:0;display:flex;gap:1rem}
+  </style> 
 </head>
-<body>
-  <header id="top" class="header">
-    <nav class="navbar">
-      <a href="#about" class="nav-link">ABOUT</a>
-      <a href="#work" class="nav-link">WORK</a>
-      <a href="#demos" class="nav-link">DEMOS</a>
-      <a href="#projects" class="nav-link">PROJECTS</a>
-      <a href="#contact" class="nav-link">CONTACT</a>
+<body> 
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header id="top" class="header" role="banner">
+    <nav class="navbar" role="navigation" aria-label="Primary navigation">
+      <ul class="nav-list">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">skills</a></li>
+        <li><a href="#demos" class="nav-link">Demos</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
     </nav>
-  </header>      
-  <div id="about" class="about-section">
-    <div class="hero-1">
-    <h1 class="hero-title">CRAFT DESIGNER</h1> 
-    </div>   
-    <p class="hero-text">Creative work, handmade ideas, and beautiful designs</p>
-     
-                  
-  <main>
-    <section class="c-1">
-        <figure class="photo">
-          <img src="https://raw.githubusercontent.com/sakshamsachan472-cyber/craft-designer/main/arjit%20photo.jpeg" alt="Craft Designer Photo">
-          <figcaption>Arjit Sachan - Craft Designer</figcaption>
-        </figure>
-       <hr>  
+    <div class="about-section">
+      <div class="hero-1">
+        <h1 class="hero-title">CRAFT DESIGNER</h1>
+      </div>
+          
+    </div> 
+  </header>
+
+  <main id="main-content" role="main" class="body">
+    <details id="about" class="container">
+      <summary>About</summary>
+      <figure class="photo">
+        <img src="https://raw.githubusercontent.com/sakshamsachan472-cyber/craft-designer/main/arjit%20photo.jpeg" alt="Portrait of Arjit Sachan, craft designer">
+        <figcaption>Arjit Sachan - Craft Designer</figcaption>
+      </figure>
+      <hr>
   
-    <div id="about" class="profile-grid">
-      <div class="label">Name</div><div class="colon">:</div><div class="value">Arjit Sachan</div>
-      <div class="label">Age</div><div class="colon">:</div><div class="value">19</div>
-      <div class="label">Qualification</div><div class="colon">:</div><div class="value">Craft Designer</div>
-      <div class="label">College</div><div class="colon">:</div><div class="value">Uttar Pradesh institute of design and research, Lucknow</div>
-      <div class="label">Pincode</div><div class="colon">:</div><div class="value">226002</div>
-      <div class="label">Email</div><div class="colon">:</div><div class="value">arjitsachan7@email.com</div>
-      <div class="label">Phone</div><div class="colon">:</div><div class="value">+91 70681 29752</div>
-    </div>
-  </div>
- 
-</div>
-   
+      <div id="profile" class="profile-grid" aria-labelledby="profile-heading">
+        <h2 id="profile-heading" class="visually-hidden">Profile details</h2>
+        <div class="label">Name</div><div class="colon">:</div><div class="value">Arjit Sachan</div>
+        <div class="label">Age</div><div class="colon">:</div><div class="value">19</div>
+        <div class="label">Qualification</div><div class="colon">:</div><div class="value">Craft Designer</div>
+        <div class="label">College</div><div class="colon">:</div><div class="value">Uttar Pradesh institute of design and research, Lucknow</div>
+        <div class="label">Pincode</div><div class="colon">:</div><div class="value">226002</div>
+        <div class="label">Email</div><div class="colon">:</div><div class="value">arjitsachan7@email.com</div>
+        <div class="label">Phone</div><div class="colon">:</div><div class="value">+91 70681 29752</div>
+      </div> 
+    </details>
+<hr> 
+
+    <details class="skills-1">
+      <summary id="skills">Craft Designer Skills</summary>    
       
-    </section>  
-</div>
-    <section id="work" class="c-2">
-      <h2>Work</h2>
       <p>The work combines artistic vision with craftsmanship, delivering pieces that are unique, elegant, and thoughtfully designed. Each project is created with care and precision.</p>
-    </section>
- 
-    <section id="demos" class="c-3">
-      <h2>Work Demos</h2>
+  
+      <div class="row">
+    <div class="box">
+    <h2>
+ CRAFT DESGNER SKILLS</h2>
+ <div class="label">Material Sensibility</div><div class="value">Understanding how different materials (wood, clay, textiles, paper, metals) behave and how to use them creatively.</div>
+  
+<div class="label">Handcraft Techniques</div><div class="value">Skills in carving, weaving, pottery, origami, embroidery, or other traditional craft methods.</div>
+
+    <div class="label">Visual Design</div><div class="value">Strong grasp of color theory, typography, layout, and composition.</div>
+
+<div class="label">Prototyping & Model Making</div><div class="value">Ability to create mock-ups or prototypes to test ideas.</div>
+</div>
+<div class="box">
+      <h2>CREATIVE & STRATEGIC SKILLS</h2>
+    
+    <div class="label">Design Thinking</div><div class="value">Problem-solving through iterative design processes.</div>
+    <div class="label">Storytelling</div><div class="value">Presenting craft work with a narrative that connects emotionally with audiences.</div>
+    <div class="label">Innovation</div><div class="value">Combining traditional craft with modern design trends.</div>
+
+<div class="label">Sustainability Awareness</div><div class="value">Using eco-friendly materials and processes.</div>
+</div>
+<div class="box">
+<h2>Human-Centered & Soft Skills</h2>
+<div class="label">Empathy</div><div class="value">Understanding user needs and designing for real people.</div>
+<div class="label">Cultural Intelligence</div><div class="value">Sensitivity to traditions, heritage, and local aesthetics.</div>
+<div class="label">Collaboration</div><div class="value">Working with artisans, clients, and cross-disciplinary teams.</div>
+<div class="label">Communication</div><div class="value">Explaining design choices clearly to clients or in portfolios.</div>
+</div>
+
+</div> 
+</details>
+    <hr> 
+    <details id="demos" class="demo-1">
+      <summary>Work Demos</summary>
       <p>Here are examples of the designer’s creative projects and sample work that highlight the style and quality of craftsmanship.</p>
       <ul class="list-items">
         <li>Handmade decorative pieces</li>
         <li>Custom gift designs</li>
         <li>Creative wall art</li>
       </ul>
-    </section>
-
-    <section id="projects" class="c-4">
-      <h2>Real Projects</h2>
+    </details>
+<hr>   
+    <details id="projects" class="projects-1">
+      <summary>Real Projects</summary>
       <p>These are completed works that showcase the designer’s ability to bring ideas to life with originality and professionalism.</p>
-    </section>
-
-    
-      
+    </details>
   </main>
+</div>
 </body>
+    <footer role="contentinfo" class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-box">
+          <h3>Craft Designer</h3>
+          <div class="footer-brand">
+            <p>Creative, elegant, and handmade design work for every special idea.</p>
+          </div>
+        </div>
+
+        <div id="contact" class="footer-box">
+          <h3>Connect</h3>
+          <ul class="footer-links">
+            <li><a href="https://www.instagram.com/_arjit_x7?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://www.youtube.com/channel/UCXFf39tmKDQaZUtXm2usYuw" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-box">
+          <h3>Support</h3>
+          <ul class="footer-links">
+            <li><a href="mailto:arjitsachan7@email.com">Email Support</a></li>
+            <li><a href="tel:+917068129752">Call Support</a></li>
+            <li><a href="#top">Back to Top</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 </html>
