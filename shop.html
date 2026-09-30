@@ -1,0 +1,470 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop handmade embroidered shirts, Warli-inspired footwear, artisan jewelry, and custom craft pieces by Arjit Sachan.">
+  <meta property="og:title" content="Handmade Craft Shop | Arjit Sachan">
+  <meta property="og:description" content="Shop handmade embroidered shirts, Warli-inspired footwear, artisan jewelry, and custom craft pieces by Arjit Sachan.">
+  <meta property="og:type" content="website">
+  <title>Handmade Craft Shop | Arjit Sachan</title>
+ <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shop.css">
+</head>   
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header>
+    <div class="shop-toolbar" aria-label="Shop tools">
+      <form action="shop.html" method="get" class="searchbar" aria-label="Search products" role="search">
+        <label class="visually-hidden" for="product-search">Search products</label>
+        <input id="product-search" type="search" name="q" placeholder="Search handmade pieces">
+        <button type="submit" aria-label="Search products">Search</button>
+      </form>
+      <div class="toolbar-actions">
+        <button type="button" class="cart-btn" aria-label="View cart">🛒 <span>Cart</span></button>
+        <button class="profile-link" type="button" data-open-account aria-label="Open account form" title="Open account form">
+          <span class="profile-avatar" aria-hidden="true">👤</span>
+        </button>
+      </div>
+    </div>
+    <nav class="navigation" aria-label="Main navigation">
+      <a class="nav-brand" href="shop.html">
+        <h2>Craft Shop</h2>
+        <p>handmade . Unique . Yours</p>
+      </a>
+      <ul class="nav-list" id="shopNavMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="#shop-contact">Contact</a></li>
+        <li><button class="profile-nav-link" type="button" data-open-account aria-label="Open account form" title="Open account form"><span aria-hidden="true">👤</span></button></li>
+      </ul> 
+    </nav>
+  </header> 
+  <dialog class="shop-account-dialog" aria-labelledby="shop-account-title">
+    <div class="shop-account-dialog-header">
+      <button class="shop-account-dialog-close" type="button" aria-label="Close account form">&times;</button>
+    </div>
+    <section class="shop-account-section">
+      <div class="shop-account-layout">
+        <div class="shop-account-intro">
+          <p class="shop-account-kicker">Craft Designer Account</p>
+          <h2 id="shop-account-title">Create your account</h2>
+          <p>Introduce yourself to the studio and keep your account details together.</p>
+        </div>
+        <form class="shop-account-form" action="#" method="post">
+          <div class="shop-account-fields">
+            <div class="shop-account-field">
+              <label for="shop-account-name">Name</label>
+              <input id="shop-account-name" name="name" type="text" autocomplete="name" placeholder="Your full name" required>
+            </div>
+            <div class="shop-account-field">
+              <label for="shop-account-email">Email</label>
+              <input id="shop-account-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+            </div>
+            <div class="shop-account-field">
+              <label for="shop-account-username">Username</label>
+              <input id="shop-account-username" name="username" type="text" autocomplete="username" placeholder="Choose a username" required>
+            </div>
+            <div class="shop-account-field">
+              <label for="shop-account-age">Age</label>
+              <input id="shop-account-age" name="age" type="number" min="14" max="120" inputmode="numeric" placeholder="14 or older" required>
+            </div>
+            <div class="shop-account-field">
+              <label for="shop-account-password">Password</label>
+              <input id="shop-account-password" name="password" type="password" autocomplete="new-password" minlength="8" placeholder="Create a password" required>
+            </div>
+            <div class="shop-account-field">
+              <label for="shop-account-confirm-password">Confirm password</label>
+              <input id="shop-account-confirm-password" name="confirm-password" type="password" autocomplete="new-password" minlength="8" placeholder="Enter it again" required>
+            </div>
+          </div>
+          <div class="shop-account-form-actions">
+            <button class="shop-account-submit" type="submit">Create account</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </dialog>
+  <main id="main-content">   
+<div class="shop-header"> 
+ 
+  <div id="custom-product">
+    <h3>HANDCRAFT ELEGANT WITH LOVE AND PATIENCE</h3>
+  <h1 class="h1">Welcome to Our Handmade Craft Shop</h1>  
+  <p>Discover unique</p><p> handcrafted products made with love and care.</p><p> Each item tells a story and brings a touch of artistry to your life.</p> 
+  <p class="shop-mobile-copy">Handmade pieces, made with care.</p>
+
+  <a href="index.html#contact" class="custom-product-btn" aria-label="Request a custom product">Custom Product</a>
+  </div>
+  <div>
+      <p class="s-1">made with hand</p> 
+    <p class="s-1">made with heart</p>
+    <span class="heart" aria-hidden="true">❤</span> 
+  </div>
+ </div> 
+
+  <section class="offer-carousel" id="offerCarousel" aria-label="Exclusive handmade offers">
+    <div class="offer-carousel-heading">
+      <div>
+        <p class="offer-eyebrow">A little something from the studio</p>
+        <h2>Exclusive offers</h2>
+      </div>
+      <div class="offer-controls" aria-label="Offer navigation">
+        <button class="offer-control" type="button" data-offer-direction="previous" aria-label="Previous offer">&larr;</button>
+        <button class="offer-control" type="button" data-offer-direction="next" aria-label="Next offer">&rarr;</button>
+      </div>
+    </div>
+    <div class="offer-track" id="offerTrack" tabindex="0" aria-label="Scroll between exclusive offers">
+      <article class="offer-banner" aria-label="Warli shoe offer">
+        <img class="offer-banner-image" src="https://raw.githubusercontent.com/sakshamsachan472-cyber/craft-designer/2b57cafa504973f8b7a39ed8c520fc420c164064/shoe%201.jpeg" alt="Hand-painted Warli-inspired shoes" loading="lazy">
+        <div class="offer-banner-content">
+          <p class="offer-banner-label">01 <span>Hand-painted, made to wander</span></p>
+          <h3>The art of every step</h3>
+          <p>Carry a little story with you. Each Warli-inspired pair is painted by hand, with its own one-of-a-kind character. $49.99.</p>
+          <a href="#product-warli-art-shoe">Discover the shoes <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </article>
+      <article class="offer-banner" aria-label="Embroidered shirt offer">
+        <img class="offer-banner-image" src="https://raw.githubusercontent.com/sakshamsachan472-cyber/shirt-/main/shirt%201.jpeg" alt="Hand-embroidered shirt with a heritage-inspired motif" loading="lazy">
+        <div class="offer-banner-content">
+          <p class="offer-banner-label">02 <span>Stitched slowly, worn proudly</span></p>
+          <h3>A story in every stitch</h3>
+          <p>Heritage-inspired embroidery meets an easy everyday fit. Find the piece that feels like it was made just for you. $29.99.</p>
+          <a href="#category-embroidered-textiles">Find your favourite <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </article>
+    </div>
+    <p class="visually-hidden" id="offerAnnouncement" aria-live="polite"></p>
+  </section>
+
+<section class="shop-intro" id="categories" aria-label="Product categories">
+   
+    <div class="product-category" tabindex="0" aria-label="Browse product categories horizontally">
+      <a class="category-item" href="#category-embroidered-textiles">
+        <img src="https://raw.githubusercontent.com/sakshamsachan472-cyber/shirt-/main/shirt%203.jpeg" alt="Hand-embroidered shirt with a heritage-inspired motif" loading="lazy">
+        <h3>Embroidered Textiles</h3>
+      </a>
+      <a class="category-item" href="#category-handmade-craft">
+        <img src="https://raw.githubusercontent.com/sakshamsachan472-cyber/craft-designer/2b57cafa504973f8b7a39ed8c520fc420c164064/shoe%201.jpeg" alt="Hand-painted Warli-inspired shoes" loading="lazy">
+        <h3>Handmade Craft</h3>
+      </a>
+      <a class="category-item" href="#category-custom-jewellery">
+         <img src="https://shop.gaatha.com/image/cache/catalog/Gaatha/14-Tribal-Necklace--(2)-900x900.jpg" alt="Handmade jewellery inspired by traditional patterns" loading="lazy">
+        <h3>Custom Jewellery</h3>
+      </a>
+      <a class="category-item" href="#category-painted-artwork">
+        <img src="https://raw.githubusercontent.com/sakshamsachan472-cyber/craft-designer/2b57cafa504973f8b7a39ed8c520fc420c164064/shoe%201.jpeg" alt="Temporary shoe image for the Painted Artwork collection" loading="lazy">
+        <h3>Painted Artwork</h3>
+      </a>
+      <a class="category-item" href="#category-customised-items">
+        <img src="https://raw.githubusercontent.com/sakshamsachan472-cyber/craft-designer/2b57cafa504973f8b7a39ed8c520fc420c164064/shoe%202.jpeg" alt="Custom Warli-inspired shoe design" loading="lazy">
+        <h3>Customised Items</h3>
+      </a>
+  </div>
+</section> 
+<hr style="border: 1px solid yellow; width: 50%;"> 
+
+  <p class="search-status" id="search-status" role="status" aria-live="polite" hidden></p>
+  <section class="shop-intro product-catalog" id="featured-products" aria-label="Craft products by category">
+  <h2 class="shop-intro-title">Shop by Category</h2>
+
+  <section class="product-category-section" id="category-embroidered-textiles" aria-labelledby="embroidered-textiles-title">
+    <header class="product-category-header">
+      <h3 id="embroidered-textiles-title">Embroidered Textiles</h3>
+      <p>Hand-finished shirts shaped by heritage patterns and contemporary design.</p>
+    </header>
+    <div class="shop-grid" tabindex="0" aria-label="Embroidered textile products">
+      <article id="product-embroidered-shirt" class="product-card" aria-label="Parang Elegance embroidered shirt">
+        <img class="product-image" src="https://raw.githubusercontent.com/sakshamsachan472-cyber/shirt-/main/shirt%201.jpeg" alt="Parang Elegance handmade embroidered shirt" loading="lazy">
+        <h4>Parang Elegance</h4>
+        <div class="rating" role="img" aria-label="Rated 5 out of 5 stars"><span aria-hidden="true">★★★★★</span><span class="visually-hidden">Rated 5 out of 5 stars</span></div>
+        <p>$29.99</p>
+        <button type="button" class="add-to-cart-btn" aria-label="Add Parang Elegance shirt to cart">Add to Cart</button>
+      </article>
+      <article class="product-card" aria-label="Everyday Heritage embroidered shirt">
+        <img class="product-image" src="https://raw.githubusercontent.com/sakshamsachan472-cyber/shirt-/main/shirt%202.jpeg" alt="Everyday Heritage hand-embroidered shirt" loading="lazy">
+        <h4>Everyday Heritage</h4>
+        <div class="rating" role="img" aria-label="Rated 5 out of 5 stars"><span aria-hidden="true">★★★★★</span><span class="visually-hidden">Rated 5 out of 5 stars</span></div>
+        <p>$29.99</p>
+        <button type="button" class="add-to-cart-btn" aria-label="Add Everyday Heritage shirt to cart">Add to Cart</button>
+      </article>
+      <article class="product-card" aria-label="Stitch and Detail embroidered shirt">
+        <img class="product-image" src="https://raw.githubusercontent.com/sakshamsachan472-cyber/shirt-/main/shirt%203.jpeg" alt="Stitch and Detail hand-stitched shirt" loading="lazy">
+        <h4>Stitch &amp; Detail</h4>
+        <div class="rating" role="img" aria-label="Rated 5 out of 5 stars"><span aria-hidden="true">★★★★★</span><span class="visually-hidden">Rated 5 out of 5 stars</span></div>
+        <p>$29.99</p>
+        <button type="button" class="add-to-cart-btn" aria-label="Add Stitch and Detail shirt to cart">Add to Cart</button>
+      </article>
+      <article class="product-card" aria-label="Heritage Reworked embroidered shirt">
+        <img class="product-image" src="https://raw.githubusercontent.com/sakshamsachan472-cyber/shirt-/main/shirt%204.jpeg" alt="Heritage Reworked shirt with culture-led embroidery" loading="lazy">
+        <h4>Heritage, Reworked</h4>
+        <div class="rating" role="img" aria-label="Rated 5 out of 5 stars"><span aria-hidden="true">★★★★★</span><span class="visually-hidden">Rated 5 out of 5 stars</span></div>
+        <p>$29.99</p>
+        <button type="button" class="add-to-cart-btn" aria-label="Add Heritage Reworked shirt to cart">Add to Cart</button>
+      </article>
+      <article class="product-card" aria-label="Quiet Elegance embroidered shirt">
+        <img class="product-image" src="https://raw.githubusercontent.com/sakshamsachan472-cyber/shirt-/main/shirt%205.jpeg" alt="Quiet Elegance shirt with a timeless embroidered pattern" loading="lazy">
+        <h4>Quiet Elegance</h4>
+        <div class="rating" role="img" aria-label="Rated 4 out of 5 stars"><span aria-hidden="true">★★★★☆</span><span class="visually-hidden">Rated 4 out of 5 stars</span></div>
+        <p>$29.99</p>
+        <button type="button" class="add-to-cart-btn" aria-label="Add Quiet Elegance shirt to cart">Add to Cart</button>
+      </article>
+      <article class="product-card" aria-label="Crafted Statement embroidered shirt">
+        <img class="product-image" src="https://raw.githubusercontent.com/sakshamsachan472-cyber/shirt-/main/shirt%206.jpeg" alt="Crafted Statement contemporary embroidered shirt" loading="lazy">
+        <h4>Crafted Statement</h4>
+        <div class="rating" role="img" aria-label="Rated 5 out of 5 stars"><span aria-hidden="true">★★★★★</span><span class="visually-hidden">Rated 5 out of 5 stars</span></div>
+        <p>$29.99</p>
+        <button type="button" class="add-to-cart-btn" aria-label="Add Crafted Statement shirt to cart">Add to Cart</button>
+      </article>
+    </div>
+  </section>
+
+  <section class="product-category-section" id="category-handmade-craft" aria-labelledby="handmade-craft-title">
+    <header class="product-category-header">
+      <h3 id="handmade-craft-title">Handmade Craft</h3>
+      <p>Warli-inspired footwear made into wearable craft.</p>
+    </header>
+    <div class="shop-grid" tabindex="0" aria-label="Handmade craft shoe products">
+      <article id="product-warli-art-shoe" class="product-card" aria-label="Hand-painted Warli shoes">
+        <img class="product-image" src="https://raw.githubusercontent.com/sakshamsachan472-cyber/craft-designer/2b57cafa504973f8b7a39ed8c520fc420c164064/shoe%201.jpeg" alt="Hand-painted Warli-inspired shoes" loading="lazy">
+        <h4>Hand-Painted Warli Shoes</h4>
+        <div class="rating" role="img" aria-label="Rated 5 out of 5 stars"><span aria-hidden="true">★★★★★</span><span class="visually-hidden">Rated 5 out of 5 stars</span></div>
+        <p>$49.99</p>
+        <button type="button" class="add-to-cart-btn" aria-label="Add Hand-Painted Warli Shoes to cart">Add to Cart</button>
+      </article>
+      <article class="product-card" aria-label="Warli Circle Motif shoes">
+        <img class="product-image" src="https://raw.githubusercontent.com/sakshamsachan472-cyber/craft-designer/2b57cafa504973f8b7a39ed8c520fc420c164064/shoe%202.jpeg" alt="Warli-inspired shoes with a women's circle motif" loading="lazy">
+        <h4>Circle Motif Shoes</h4>
+        <div class="rating" role="img" aria-label="Rated 5 out of 5 stars"><span aria-hidden="true">★★★★★</span><span class="visually-hidden">Rated 5 out of 5 stars</span></div>
+        <p>$49.99</p>
+        <button type="button" class="add-to-cart-btn" aria-label="Add Circle Motif Shoes to cart">Add to Cart</button>
+      </article>
+    </div>
+  </section>
+
+  <section class="product-category-section" id="category-custom-jewellery" aria-labelledby="custom-jewellery-title">
+    <header class="product-category-header">
+      <h3 id="custom-jewellery-title">Custom Jewellery</h3>
+      <p>Handmade adornment with traditional pattern and personal character.</p>
+    </header>
+    <div class="shop-grid" tabindex="0" aria-label="Custom jewellery products">
+      <article id="product-handmade-jewellery" class="product-card" aria-label="Custom folk-inspired jewellery">
+        <img class="product-image" src="https://shop.gaatha.com/image/cache/catalog/Gaatha/14-Tribal-Necklace--(2)-900x900.jpg" alt="Handmade jewellery inspired by traditional patterns" loading="lazy">
+        <h4>Custom Folk-Inspired Jewellery</h4>
+        <div class="rating" role="img" aria-label="Rated 4 out of 5 stars"><span aria-hidden="true">★★★★☆</span><span class="visually-hidden">Rated 4 out of 5 stars</span></div>
+        <p>$19.99</p>
+        <button type="button" class="add-to-cart-btn" aria-label="Add Custom Folk-Inspired Jewellery to cart">Add to Cart</button>
+      </article>
+    </div>
+  </section>
+
+  <section class="product-category-section" id="category-painted-artwork" aria-labelledby="painted-artwork-title">
+    <header class="product-category-header">
+      <h3 id="painted-artwork-title">Painted Artwork</h3>
+      <p>Warli-inspired painted pieces.</p>
+    </header>
+    <div class="shop-grid" tabindex="0" aria-label="Painted artwork products">
+      <article id="product-painted-artwork" class="product-card" aria-label="Painted artwork preview">
+        <img class="product-image" src="https://raw.githubusercontent.com/sakshamsachan472-cyber/craft-designer/2b57cafa504973f8b7a39ed8c520fc420c164064/shoe%201.jpeg" alt="Temporary Warli shoe image for the Painted Artwork collection" loading="lazy">
+        <h4>Painted Artwork Preview</h4>
+        <div class="rating" role="img" aria-label="Rated 5 out of 5 stars"><span aria-hidden="true">★★★★★</span><span class="visually-hidden">Rated 5 out of 5 stars</span></div>
+        <p>$29.99</p>
+        <button type="button" class="add-to-cart-btn" aria-label="Add Painted Artwork Preview to cart">Add to Cart</button>
+      </article>
+    </div>
+  </section>
+
+  <section class="product-category-section" id="category-customised-items" aria-labelledby="customised-items-title">
+    <header class="product-category-header">
+      <h3 id="customised-items-title">Customised Items</h3>
+      <p>Personalised craft pieces developed around your idea.</p>
+    </header>
+    <div class="shop-grid" tabindex="0" aria-label="Customised craft products">
+      <article id="product-customised-items" class="product-card" aria-label="Customised Warli shoe design">
+        <img class="product-image" src="https://raw.githubusercontent.com/sakshamsachan472-cyber/craft-designer/2b57cafa504973f8b7a39ed8c520fc420c164064/shoe%202.jpeg" alt="Customised Warli-inspired shoe design" loading="lazy">
+        <h4>Customised Warli Shoes</h4>
+        <div class="rating" role="img" aria-label="Rated 5 out of 5 stars"><span aria-hidden="true">★★★★★</span><span class="visually-hidden">Rated 5 out of 5 stars</span></div>
+        <p>$49.99</p>
+        <button type="button" class="add-to-cart-btn" aria-label="Add Customised Warli Shoes to cart">Add to Cart</button>
+      </article>
+    </div>
+  </section>
+</section>
+  </main>
+  <footer class="shop-footer">
+    <div class="footer-assurances" aria-label="Our service commitments">
+      <div class="assurance-item">
+        <span class="assurance-icon" aria-hidden="true">✦</span>
+        <div><h2>Made by hand</h2><p>Thoughtfully crafted, one piece at a time.</p></div>
+      </div>
+      <div class="assurance-item">
+        <span class="assurance-icon" aria-hidden="true">♧</span>
+        <div><h2>Packed with care</h2><p>Handled thoughtfully from our hands to yours.</p></div>
+      </div>
+      <div class="assurance-item">
+        <span class="assurance-icon" aria-hidden="true">↗</span>
+        <div><h2>Safe delivery support</h2><p>Thoughtful packing and help with your delivery or order.</p></div>
+      </div>
+    </div>
+
+    <div class="footer-main">
+      <div class="footer-about">
+        <a class="footer-brand" href="shop.html">Craft Shop</a>
+        <p>Handmade, unique, and yours. Discover thoughtful pieces made with creativity and care.</p>
+      </div>
+      <nav class="footer-column" aria-label="Shop links">
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="#categories">Shop categories</a></li>
+          <li><a href="#featured-products">Featured products</a></li>
+          <li><a href="gallery.html">Our gallery</a></li>
+          <li><a href="index.html#contact">Custom requests</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-column" id="shop-contact" aria-label="Customer support">
+        <h2>Help &amp; support</h2>
+        <ul>
+          <li><a href="mailto:arjitsachan7@email.com">Email us about an order</a></li>
+          <li><a href="tel:+917068129752">Call +91 70681 29752</a></li>
+          <li><a href="index.html#contact">Delivery &amp; returns questions</a></li>
+          <li><a href="index.html#top">Your account</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Craft Shop. Handmade with care.</p>
+      <a href="#main-content">Back to top <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+  <script>
+    const shopAccountDialog = document.querySelector('.shop-account-dialog');
+    const shopAccountOpeners = document.querySelectorAll('[data-open-account]');
+    const shopAccountClose = document.querySelector('.shop-account-dialog-close');
+
+    shopAccountOpeners.forEach((button) => {
+      button.addEventListener('click', () => shopAccountDialog.showModal());
+    });
+
+    shopAccountClose.addEventListener('click', () => shopAccountDialog.close());
+    shopAccountDialog.addEventListener('click', (event) => {
+      if (event.target === shopAccountDialog) {
+        shopAccountDialog.close();
+      }
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && shopAccountDialog.open) {
+        shopAccountDialog.close();
+      }
+    });
+
+    const searchForm = document.querySelector('.shop-toolbar .searchbar');
+    const searchInput = document.getElementById('product-search');
+    const searchStatus = document.getElementById('search-status');
+    const productSections = document.querySelectorAll('.product-category-section');
+
+    const filterProducts = () => {
+      const term = searchInput.value.trim().toLocaleLowerCase();
+      let matchCount = 0;
+
+      productSections.forEach((section) => {
+        const cards = section.querySelectorAll('.product-card');
+        let sectionHasMatch = false;
+
+        cards.forEach((card) => {
+          const imageText = [...card.querySelectorAll('img')].map((image) => image.alt).join(' ');
+          const searchableText = `${card.textContent} ${card.getAttribute('aria-label') || ''} ${imageText}`.toLocaleLowerCase();
+          const matches = !term || searchableText.includes(term);
+
+          card.hidden = !matches;
+          sectionHasMatch ||= matches;
+          matchCount += Number(matches);
+        });
+
+        section.hidden = Boolean(term) && !sectionHasMatch;
+      });
+
+      searchStatus.hidden = !term;
+      searchStatus.textContent = term
+        ? matchCount
+          ? `${matchCount} product${matchCount === 1 ? '' : 's'} found for "${searchInput.value.trim()}".`
+          : `No products found for "${searchInput.value.trim()}".`
+        : '';
+
+      return matchCount;
+    };
+
+    searchInput.value = new URLSearchParams(window.location.search).get('q') || '';
+    filterProducts();
+    searchInput.addEventListener('input', filterProducts);
+    searchForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      filterProducts();
+      if (searchInput.value.trim()) {
+        document.getElementById('featured-products').scrollIntoView({
+          behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+          block: 'start'
+        });
+      }
+    });
+
+    const offerCarousel = document.getElementById('offerCarousel');
+    const offerTrack = document.getElementById('offerTrack');
+    const offerSlides = [...offerTrack.querySelectorAll('.offer-banner')];
+    const offerAnnouncement = document.getElementById('offerAnnouncement');
+    let offerTimer;
+
+    const moveOffer = (direction) => {
+      const currentIndex = Math.round(offerTrack.scrollLeft / offerTrack.clientWidth);
+      const nextIndex = (currentIndex + direction + offerSlides.length) % offerSlides.length;
+      offerTrack.scrollTo({
+        left: offerSlides[nextIndex].offsetLeft - offerTrack.offsetLeft,
+        behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'
+      });
+      offerAnnouncement.textContent = `Offer ${nextIndex + 1} of ${offerSlides.length}: ${offerSlides[nextIndex].querySelector('h3').textContent}`;
+    };
+
+    const stopOfferRotation = () => {
+      window.clearInterval(offerTimer);
+      offerTimer = undefined;
+    };
+
+    const startOfferRotation = () => {
+      if (offerTimer || document.hidden || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        return;
+      }
+      offerTimer = window.setInterval(() => moveOffer(1), 4000);
+    };
+
+    offerCarousel.querySelectorAll('[data-offer-direction]').forEach((button) => {
+      button.addEventListener('click', () => moveOffer(button.dataset.offerDirection === 'next' ? 1 : -1));
+    });
+    offerCarousel.addEventListener('mouseenter', stopOfferRotation);
+    offerCarousel.addEventListener('mouseleave', startOfferRotation);
+    offerCarousel.addEventListener('focusin', stopOfferRotation);
+    offerCarousel.addEventListener('focusout', (event) => {
+      if (!offerCarousel.contains(event.relatedTarget)) {
+        startOfferRotation();
+      }
+    });
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) {
+        stopOfferRotation();
+      } else {
+        startOfferRotation();
+      }
+    });
+    startOfferRotation();
+
+    (() => {
+      const target = document.getElementById(window.location.hash.slice(1));
+      const productGrid = target?.closest('.shop-grid');
+      if (target && productGrid && productGrid.contains(target)) {
+        requestAnimationFrame(() => target.scrollIntoView({ block: 'nearest', inline: 'start' }));
+      }
+    })();
+  </script>
+</body>
+</html>
